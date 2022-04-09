@@ -40,16 +40,16 @@ body {
     top: -58px;
     left: 0px;
     animation-name: drive;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-iteration-count: infinite;
 
 }
 @keyframes drive {
     from{
-        transform: translateX(200px);
+        transform: translateX(-200px);
     }
     to{
-        transform: translateX(1200px);
+        transform: translateX(1400px);
     }
 }
