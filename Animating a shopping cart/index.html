@@ -12,7 +12,7 @@
   <header>
     <h1>Sports Clothing</h1>
     <div class="basket-icon">
-        <img src="img/basket.png" />
+      <img src="img/basket.png" />
     </div>
   </header>
   <ul class="products">
@@ -47,5 +47,18 @@
       <button>Add to Basket</button>
     </li>
   </ul>
-  <script></script>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script>
+    $("button").on("click", function () {
+      $(this)
+        .closest("li")
+        .find("img")
+        .clone()
+        .addClass("zoom")
+        .appendTo("body");
+      setTimeout(function () {
+        $(".zoom").remove();
+      }, 1000);
+    });
+  </script>
 </body>
