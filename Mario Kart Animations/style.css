@@ -35,6 +35,20 @@ body {
   position: absolute;
   top: 45%;
 }
+.cloud{
+    position: absolute;
+}
+.cloud:nth-child(1){
+    top:5rem;
+    width: 250px;
+    opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+}
+.cloud:nth-child(2){
+    top:0;
+    width: 320px;
+    animation: wind 60s linear infinite reverse;
+}
 .mario{
     position: absolute;
     top: -58px;
@@ -43,7 +57,18 @@ body {
     animation-duration: 5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
+}
+.luigi{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
 }
 @keyframes drive {
     from{
@@ -51,5 +76,13 @@ body {
     }
     to{
         transform: translateX(1400px);
+    }
+}
+@keyframes wind {
+    from{
+        left: -100px
+    }
+    to{
+        left: 100%;
     }
 }
