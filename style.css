@@ -60,15 +60,7 @@ body {
     animation-timing-function: linear;
 
 }
-.luigi{
-    position: absolute;
-    top: 50px;
-    left: 0px;
-    animation-name: drive;
-    animation-duration: 6s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-}
+
 @keyframes drive {
     from{
         transform: translateX(-200px);
