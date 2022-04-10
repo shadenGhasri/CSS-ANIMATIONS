@@ -22,7 +22,16 @@ header{
   .basket button{
     border-radius: 10px;
     cursor: pointer;
+    width: fit-content;
+    background-color: rgb(138, 138, 247);
+    color: #eee;
+    outline: none;
+    height: 35px;
   }
+  .basket button:hover{
+    background-color: #eee ;
+    color: rgb(138, 138, 247);
+}
   .basket header div{
     float: right;
     position: relative;
