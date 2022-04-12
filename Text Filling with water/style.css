@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .loader h1 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 10em;
+    color: rgba(225, 225, 225, 0.1);
+    background-image: url("https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: left 0px top 80px;
+    }
+    40% {
+      background-position: left 800px top -50px;
+    }
+    80% {
+      background-position: left 1800px top -50px;
+    }
+    100% {
+      background-position: left 2400px top 80px;
+    }
+  }
+  
