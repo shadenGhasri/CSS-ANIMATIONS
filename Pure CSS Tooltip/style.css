@@ -32,9 +32,9 @@ ul li {
 }
 
 ul li:hover {
-  background: #86ff3d;
+  background: rgb(155, 155, 247);
   box-shadow: 0 0 0 4px #333;
-  box-shadow: 0 0 0 6px #86ff3d;
+  box-shadow: 0 0 0 6px rgb(155, 155, 247);
 }
 
 ul li .container {
